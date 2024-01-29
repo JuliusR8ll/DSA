@@ -16,7 +16,6 @@ public:
         deque<TreeNode*> dq;
         vector<int> v;
         dq.push_back(root);
-        //v.push_back(dq.back()->val);
         while(!dq.empty()){
             int s = dq.size();
             v.push_back(dq.back()->val);
