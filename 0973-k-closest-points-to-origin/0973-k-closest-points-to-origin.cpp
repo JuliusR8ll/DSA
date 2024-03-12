@@ -7,7 +7,6 @@ public:
         }
         for(int i = k;i<points.size();i++){
             vector<int> top = pq.top().second;
-            //double d = dist(top);
             if(dist(points[i]) < dist(top)){
                 pq.pop();
                 pq.push({dist(points[i]),points[i]});
